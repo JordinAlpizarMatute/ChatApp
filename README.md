@@ -1,8 +1,8 @@
-# 💬 WhatsApp Clone - Chat en Tiempo Real
+ChatApp - Chat en Tiempo Real
 
 Una aplicación de chat en tiempo real similar a WhatsApp, construida con Node.js, Express y Socket.io.
 
-## 🚀 Características
+Características
 
 - ✅ Chat en tiempo real entre múltiples usuarios
 - ✅ Mensajes instantáneos
@@ -13,33 +13,7 @@ Una aplicación de chat en tiempo real similar a WhatsApp, construida con Node.j
 - ✅ Diseño moderno inspirado en WhatsApp
 - ✅ Interfaz responsive (funciona en móviles y desktop)
 
-## 📋 Requisitos previos
-
-Antes de comenzar, asegúrate de tener instalado:
-
-- [Node.js](https://nodejs.org/) (versión 14 o superior)
-- npm (viene incluido con Node.js)
-
-## 🔧 Instalación
-
-1. **Navega a la carpeta del proyecto:**
-   ```bash
-   cd whatsapp-clone
-   ```
-
-2. **Instala las dependencias:**
-   ```bash
-   npm install
-   ```
-
-## ▶️ Cómo ejecutar
-
-1. **Inicia el servidor:**
-   ```bash
-   npm start
-   ```
-
-2. **Abre tu navegador y visita:**
+Visita:**
    ```
    http://localhost:3000
    ```
@@ -49,10 +23,10 @@ Antes de comenzar, asegúrate de tener instalado:
    - O comparte tu IP local con otros dispositivos en tu red
    - Cada pestaña/dispositivo puede usar un nombre de usuario diferente
 
-## 📁 Estructura del proyecto
+ Estructura del proyecto
 
 ```
-whatsapp-clone/
+ChatApp/
 │
 ├── server.js              # Servidor Node.js con Express y Socket.io
 ├── package.json           # Configuración del proyecto y dependencias
@@ -63,7 +37,7 @@ whatsapp-clone/
     └── app.js             # Lógica del cliente (JavaScript)
 ```
 
-## 🛠️ Tecnologías utilizadas
+Tecnologías utilizadas
 
 - **Backend:**
   - Node.js
@@ -76,14 +50,7 @@ whatsapp-clone/
   - JavaScript (Vanilla JS)
   - Socket.io Client
 
-## 💡 Cómo funciona
-
-1. **Conexión WebSocket:** Socket.io establece una conexión bidireccional entre el cliente y el servidor
-2. **Eventos en tiempo real:** Los mensajes se envían y reciben instantáneamente
-3. **Broadcasting:** Cuando un usuario envía un mensaje, el servidor lo transmite a todos los demás
-4. **Persistencia temporal:** Los últimos 100 mensajes se almacenan en memoria
-
-## 🎯 Próximas mejoras (ideas para expandir)
+ 🎯 Próximas mejoras (ideas para expandir)
 
 - [ ] Salas de chat privadas
 - [ ] Mensajes privados entre usuarios
@@ -95,14 +62,14 @@ whatsapp-clone/
 - [ ] Notificaciones de escritorio
 - [ ] Indicador de mensajes leídos/no leídos
 
-## 📝 Notas para desarrollo
+ Notas para desarrollo
 
 - El servidor escucha en el puerto 3000 por defecto
 - Los mensajes solo persisten mientras el servidor está activo
 - Para producción, considera usar una base de datos real
 - Implementa validación y sanitización de datos para seguridad
 
-## 🤝 Contribuciones
+## Contribuciones
 
 Este es un proyecto educativo. Siéntete libre de:
 - Hacer fork del proyecto
@@ -110,10 +77,8 @@ Este es un proyecto educativo. Siéntete libre de:
 - Reportar bugs
 - Sugerir mejoras
 
-## 📧 Contacto
+##  Contacto
 
 Proyecto creado con fines educativos para aprender desarrollo web con Node.js y Socket.io.
 
----
 
-¡Disfruta chateando! 💬✨
