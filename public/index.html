@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone - Chat en Tiempo Real</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pantalla de bienvenida -->
+    <div id="welcome-screen" class="welcome-screen">
+        <div class="welcome-card">
+            <h1>💬 WhatsApp Clone</h1>
+            <p>Ingresa tu nombre para comenzar a chatear</p>
+            <input type="text" id="username-input" placeholder="Tu nombre..." maxlength="20">
+            <button id="join-btn">Entrar al Chat</button>
+        </div>
+    </div>
+
+    <!-- Pantalla principal del chat -->
+    <div id="chat-screen" class="chat-screen hidden">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="header-info">
+                <h2>💬 Chat Global</h2>
+                <span id="user-count" class="user-count">0 usuarios conectados</span>
+            </div>
+            <button id="logout-btn" class="logout-btn">Salir</button>
+        </div>
+
+        <!-- Área de mensajes -->
+        <div id="messages-container" class="messages-container">
+            <!-- Los mensajes aparecerán aquí -->
+        </div>
+
+        <!-- Indicador de "escribiendo..." -->
+        <div id="typing-indicator" class="typing-indicator hidden">
+            <span></span>
+        </div>
+
+        <!-- Input de mensaje -->
+        <div class="message-input-container">
+            <input 
+                type="text" 
+                id="message-input" 
+                placeholder="Escribe un mensaje..." 
+                autocomplete="off"
+            >
+            <button id="send-btn">Enviar</button>
+        </div>
+    </div>
+
+    <!-- Socket.io client library -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
